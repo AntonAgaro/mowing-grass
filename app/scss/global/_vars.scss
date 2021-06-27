@@ -1,0 +1,36 @@
+//variables
+$title-color: #333333;
+$green-color: #219653;
+
+//mixins
+@mixin title {
+    color: $title-color;
+    font-family: Oswald;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@mixin flex-column-center {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,15 @@
+.title-wrapper {
+    @include flex-center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.title {
+    display: inline-block;
+    @include title;
+    font-size: 2.125rem;
+}
+
+.title-divider {
+    display: inline-block;
+}

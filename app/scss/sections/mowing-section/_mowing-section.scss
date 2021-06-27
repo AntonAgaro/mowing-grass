@@ -1,0 +1,85 @@
+.mowing {
+    padding-top: 49px;
+    height: 500px;
+    background-image: url("../images/main-page/mowing-section/bg.png");
+    background-size: cover;
+    &__wrapper {
+        @include flex-space-between;
+    }
+    &__text {
+        margin-top: 116px;
+        display: inline-block;
+        max-width: 470.97px;
+    }
+    &__title {
+        @include title;
+        font-size: 2.75rem;
+        line-height: 65px;
+        color: #FFFFFF;
+    }
+    &__subtitle {
+        font-family: Prompt;
+        font-weight: 400;
+        font-size: 1rem;
+        color: #FFFFFF;
+    }
+    &__icon {
+        margin-top: 20px;
+        width: 34.36px;
+        height: 34px;
+        cursor: pointer;
+    }
+    &__modal {
+        // width: 474px;
+        // max-width: 474px;
+        // height: 403px;
+        padding: 44px 47px 39px 49px;
+        background: #FFFFFF;
+        display: inline-block;
+    }
+    &__modal-title {
+        @include title;
+        text-align: center;
+        font-size: 1.25rem;
+        color: #000000;
+    }
+    &__modal-form {
+        margin-top: 27px;
+        @include flex-column-center;
+        gap: 15px;
+    }
+    &__modal-input {
+        width: 100%;
+        max-width: 378px;
+        padding: 21px 0 16px 23px;
+        background: rgba(33, 150, 83, 0.03);
+        border: 1px solid #E9E9E9;
+        border-radius: 3px;
+        outline: none;
+    }
+    &__modal-button {
+        margin-top: 15px;
+        width: 378px;
+        max-width: 378px;
+        height: 60px;
+        background: $green-color;
+        box-shadow: 0px 4px 15px rgba(255, 210, 112, 0.1);
+        border-radius: 3px;
+        border: none;
+        cursor: pointer;
+        font-family: Prompt;
+        font-weight: 400;
+        font-size: 15px;
+        color: #FFFFFF;
+    }
+    &__modal-link {
+        display: block;
+        text-align: center;
+        margin-top: 15px;
+        font-family: Prompt;
+        font-weight: 400;
+        font-size: 0.9375rem;
+        text-decoration-line: underline;
+        color: $title-color;
+    }
+}
