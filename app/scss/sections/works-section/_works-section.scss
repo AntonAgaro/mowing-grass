@@ -1,0 +1,137 @@
+.works {
+    padding-top: 61px;
+
+    &__slider {
+        margin-top: 74px;
+        position: relative;
+        @include flex-space-between;
+    }
+
+    &__slider-buttons {
+        position: absolute;
+        top: -98px;
+        right: 0;
+        @include flex-space-between;
+        gap: 31px;
+        font-family: Prompt;
+        font-weight: 400;
+        font-size: 1rem;
+        color: #727272;
+    }
+
+    &__slider-prev {
+        @include flex-space-between;
+        gap: 19px;
+        cursor: pointer;
+    }
+
+    &__slider-next {
+        @include flex-space-between;
+        gap: 19px;
+        cursor: pointer;
+    }
+
+    &__slider-item {
+        @include flex-space-between;
+        align-items: flex-start;
+        gap: 38px;
+    }
+
+    &__slider-images {
+        width: 468px;
+        max-width: 468px;
+        height: 469.42px;
+        @include flex-column-center;
+        gap: 17.26px;
+    }
+
+    &__slider-mainimage {
+        width: 100%;
+        max-width: 464px;
+        height: 347.81px;
+    }
+
+    &__slider-img-block {
+        @include flex-space-between;
+        gap: 15.23px;
+    }
+
+    &__slider-miniimg {
+        width: 104.34px;
+        max-width: 104.34px;
+        height: 104.34px;
+        cursor: pointer;
+    }
+
+    &__slider-title {
+        @include title;
+        font-family: Oswald;
+        font-size: 1.375rem;
+    }
+    
+    &__slider-text {
+        margin-top: 27px;
+        @include flex-column-center;
+        align-items: flex-start;
+        gap: 13px;
+        font-family: Prompt;
+        font-weight: 400;
+        font-size: 1rem;
+        color: $title-color;
+    }
+
+    &__slider-divider {
+        margin-top: 37px;
+        width: 382px;
+        max-width: 382px;
+        height: 1px;
+        background: #C9C9C9;
+    }
+
+    &__slider-price {
+        margin-top: 37px;
+        @include flex-start;
+        gap: 10px;
+    }
+
+    &__slider-price-text {
+        font-family: Prompt;
+        font-weight: 400;
+        font-size: 1rem;
+        color: $title-color;
+    }
+
+    &__slider-greenprice {
+        font-family: Roboto;
+        font-weight: 700;
+        font-size: 1.25rem;
+        color: #28A53C;
+    }
+
+    &__slider-button {
+        margin-top: 21px;
+        width: 242px;
+        max-width: 242px;
+        height: 56px;
+        @include flex-center;
+        background: #28A53C;
+        border: none;
+        cursor: pointer;
+        font-family: Prompt;
+        font-weight: 700;
+        font-size: 1.25rem;
+        color: #FFFFFF;
+    }
+
+    &__allworks {
+        display: block;
+        text-align: center;
+        margin-top: 60.58px;
+        font-family: Prompt;
+        font-weight: 400;
+        font-size: 1rem;
+        text-decoration-line: underline;
+        color: #000000;
+    }
+
+}

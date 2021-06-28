@@ -1,3 +1,121 @@
 .price {
     padding-top: 78px;
+    padding-bottom: 85px;
+    &__wrapper {
+        margin-top: 49px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 24px;
+        row-gap: 41px;
+    }
+
+    &__item {
+        @include flex-column-center;
+    
+    }
+
+    &__item-img {
+        width: 100%;
+    }
+
+    &__item-title {
+        margin-top: 31px;
+        font-family: Prompt;
+        font-weight: 700;
+        font-size: 1.25rem;
+        color: $title-color;
+    }
+
+    &__item-divider {
+        margin-top: 22px;
+        width: 100%;
+        height: 1px;
+        background-color: #E9E9E9;
+    }
+
+    &__item-priceinfo {
+        position: relative;
+        width: 100%;
+        @include flex-space-between;
+        padding: 0 25px;
+    }
+
+    &__item-text {
+        margin-top: 18px;
+        width: 100%;
+        @include flex-column-center;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    &__item-text-p {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        color: #000000;
+        &--green {
+            font-family: Prompt;
+            color: $green-color;
+        }
+    }
+
+    &__item-text-question {
+        cursor: pointer;
+    }
+
+    &__item-button {
+        margin-top: 26px;
+        width: 100%;
+        max-width: 390.72px;
+        height: 75px;
+        background: $green-color;
+        @include flex-center;
+        font-family: Prompt;
+        font-weight: 700;
+        font-size: 1.25rem;
+        color: #FFFFFF;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__tooltip {
+        display: none;
+        position: absolute;
+        top: -226px;
+        left: 0;
+        padding: 29px 51px 42px 38px;
+        width: 352px;
+        max-width: 352px;
+        height: 189px;
+        background: #F0FFF6;
+        &--active {
+            @include flex-column-center;
+            align-items: flex-start;
+            gap: 14px;
+        }
+    }
+
+    &__tooltip-bold-span {
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 19px;
+        color: #000000;
+    }
+
+    &__tooltip-norm-span {
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 19px;
+        color: #4F4F4F;
+    }
+
+    &__tooltip-close {
+        position: absolute;
+        top: 18px;
+        right: 11.69px;
+        cursor: pointer;
+    }
 }

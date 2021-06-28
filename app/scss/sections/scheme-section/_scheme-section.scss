@@ -1,0 +1,141 @@
+.scheme {
+    padding: 67px 0 67px 0;
+    background: $green-color;
+
+    &__wrapper {
+        @include flex-space-between;
+        gap: 18px;
+    }
+
+    &__descr {
+        margin-top: 42px;
+        @include flex-column-center;
+        align-items: flex-start;
+        gap: 10px;
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+
+    &__subtitle {
+        margin-top: 75px;
+        @include title;
+        font-size: 1.375rem;
+        color: #FFFFFF;
+    }
+
+    &__stages {
+        margin-top: 73px;
+        @include flex-space-between;
+        gap: 18px;
+    }
+
+    &__stages-item {
+        width: 222px;
+        max-width: 222px;
+        height: 222px;
+        position: relative;
+        @include flex-column-center;
+        background: #27AE60;
+        &--consultation {
+            gap: 28px;
+        }
+        &--mowing {
+            gap: 38.48px;
+        }
+        &--payment {
+            gap: 23.68px;
+        }
+    }
+
+    &__stages-item-number {
+        position: absolute;
+        top: 15px;
+        right: 12px;
+        @include title;
+        color: $green-color;
+        font-size: 1.375rem;
+    }
+
+    &__stages-item-text {
+        max-width: 145px;
+        font-family: Roboto;
+        font-weight: 700;
+        font-size: 0.9375rem;
+        line-height: 18px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    &__modal {
+        width: 500px;
+        max-width: 500px;
+        height: 544px;
+        padding: 67px 56.42px 33.58px 62.8px;
+        background: #27AE60;
+    }
+
+    &__modal-title {
+        text-align: center;
+        @include title;
+        font-size: 1.25rem;
+        color: #FFFFFF;
+    }
+
+    &__modal-subtitle {
+        margin-top: 56px;
+        width: 100%;
+        font-family: Roboto;
+        font-weight: 500;
+        font-size: 1.125rem;
+        text-align: left;
+        color: #FFFFFF;
+    }
+
+    &__modal-text {
+        margin-top: 14.29px;
+        font-family: Roboto;
+        font-weight: 300;
+        font-size: 1rem;
+        color: #FFFFFF;
+    }
+
+    &__modal-form {
+        margin-top: 45.13px;
+        @include flex-column-center;
+        gap: 20px;
+    }
+
+    &__modal-form-input {
+        width: 100%;
+        max-width: 380px;
+        height: 72px;
+        padding: 26.58px 0 27.85px 21.18px;
+        background: $green-color;
+        border: none;
+        outline: none;
+        font-family: Roboto;
+        font-weight: 300;
+        font-size: 1rem;
+        color: #FFFFFF;
+        &::placeholder {
+            color: #FFFFFF;
+        }
+    }
+
+    &__modal-form-button {
+        width: 100%;
+        max-width: 380px;
+        height: 74px;
+        @include flex-center;
+        background: $green-color;
+        font-family: Prompt;
+        font-weight: 700;
+        font-size: 1.25rem;
+        color: #FFFFFF;
+        cursor: pointer;
+        border: none;
+    }
+}

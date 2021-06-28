@@ -1,0 +1,96 @@
+.promotion {
+    padding-top: 119px;
+    padding-bottom: 69px;
+    &__title {
+        padding: 5px 92px 1px 180px;
+        width: 375px;
+        max-width: 375px;
+        height: 56px;
+        background: $green-color;
+        @include title;
+        font-size: 2.125rem;
+        color: #FFFFFF;
+    }
+
+    &__slider {
+        position: relative;
+        margin-top: 52px;
+        @include flex-space-between;
+        gap: 60px;
+    }
+
+    &__slider-buttons {
+        position: absolute;
+        top: -66px;
+        right: 0;
+        @include flex-space-between;
+        gap: 39px;
+    }
+
+    &__slider-btn {
+        @include flex-space-between;
+        gap: 19px;
+        font-family: Prompt;
+        font-weight: 400;
+        font-size: 1rem;
+        color: #727272;
+        cursor: pointer;
+    }
+
+    &__slider-item {
+        @include flex-space-between;
+        align-items: flex-start;
+        gap: 57px;
+    }
+
+    &__slider-item-img {
+        width: 592px;
+        max-width: 592px;
+        height: 432px;
+    }
+
+    &__slider-title {
+        @include title;
+        font-size: 1.375rem;
+    }
+
+    &__slider-wrapper {
+        @include flex-start;
+        gap: 32px;
+    }
+
+    &__slider-wrapper-text {
+        margin-top: 27px;
+        @include flex-column-start;
+        gap: 7px;
+    }
+
+    &__slider-wrapper-title {
+        font-family: Prompt;
+        font-weight: bold;
+        font-size: 1.25rem;
+        color: $green-color;
+    }
+
+    &__slider-wrapper-item {
+        font-family: Prompt;
+        font-weight: 400;
+        font-size: 1rem;
+        color: $title-color;
+    }
+
+    &__slider-wrapper-btn {
+        margin: 33px auto 0 auto;
+        @include flex-center;
+        width: 323px;
+        max-width: 323px;
+        height: 62px;
+        background: $green-color;
+        font-family: Prompt;
+        font-weight: 700;
+        font-size: 1.25rem;
+        color: #FFFFFF;
+        border: none;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,47 @@
+.footer {
+    padding-top: 50px;
+    padding-bottom: 27px;
+    background: #26292B;
+
+    &__wrapper {
+        @include flex-space-between;
+    }
+
+    &__wrapper-item {
+        @include flex-column-start;
+    }
+
+    &__wrapper-item-title {
+        font-family: Prompt;
+        font-weight: 700;
+        font-size: 1.25rem;
+        color: #FBFBFB;
+    }
+
+    &__links-container {
+        margin-top: 23px;
+        @include flex-column-start;
+        gap: 15px;
+    }
+
+    &__link {
+        font-family: Prompt;
+        font-weight: 400;
+        font-size: 1rem;
+        color: #FFFFFF;
+        &--width {
+            max-width: 340px;
+        }
+        &--margin {
+            margin-left: -175px;
+        }
+    }
+
+    &__divider {
+        margin-top: 22px;
+        margin-bottom: 32px;
+        width: 100%;
+        height: 1px;
+        background: #373737;
+    }
+}
